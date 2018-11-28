@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="40dp"
+        android:width="50dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="#80045FB4" />
+            <corners android:bottomLeftRadius="50dp"
+                android:topLeftRadius="50dp"/>
+        </shape>
+    </item>
+    <item android:width="32dp"
+        android:height="32dp"
+        android:gravity="center"
+        android:drawable="@drawable/ic_brightness_1_black_24dp"/><!-- selle peab ara muutma -->
+</layer-list>
