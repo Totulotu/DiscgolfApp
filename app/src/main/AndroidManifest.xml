@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".InfoActivity" />
-        <activity android:name=".PunktideLugemisActivity"></activity>
+        <activity android:name=".PunktideLugemisActivity" />
+        <activity android:name=".LisaMangija"
+            android:theme="@style/AppTheme.Lisamangija"></activity>
     </application>
 
 </manifest>
