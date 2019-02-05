@@ -1,17 +1,139 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/punktide_lugemine"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PunktideLugemisActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
 
-    <ScrollView
+    <HorizontalScrollView
+        android:id="@+id/horizontalSV"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-    </ScrollView>
+        <ScrollView
+            android:id="@+id/verticalSV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/horizontalLinearL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tabelTL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:id="@+id/radaTR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/RadaTV"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:text="Raja nr."
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="30sp"
+                            tools:text="Raja nr." />
+
+                        <TextView
+                            android:id="@+id/tulemusTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Punktid"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="30sp"
+                            tools:text="Punktid" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/parTR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/parTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Par"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:textSize="18sp"
+                            tools:text="Par" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/lisaMangijaTR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/lisaMangijaBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:background="@drawable/sinine"
+                            android:text="Lisa Mängija"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            tools:text="Lisa Mängija" />
+
+                        <Button
+                            android:id="@+id/arvutaBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@drawable/sinine"
+                            android:text="Tulemused"
+                            android:textColor="@android:color/white"
+                            tools:text="Tulemused" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/lopetaVaheTR"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="4dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/lopetaLisamineTR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/lopetaLisamineBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@drawable/sinine"
+                            android:text="Alusta"
+                            android:textColor="@android:color/white"
+                            tools:text="Alusta" />
+
+                        <Button
+                            android:id="@+id/uusMangBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@color/sinine"
+                            android:text="Uus mäng"
+                            android:textColor="@android:color/white" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </HorizontalScrollView>
 
 </LinearLayout>

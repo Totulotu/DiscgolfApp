@@ -15,11 +15,14 @@ public class AlguseEkraan extends AppCompatActivity {
         setContentView(R.layout.activity_alguse_ekraan);
 
         Button algusBtn = (Button)findViewById(R.id.algusBtn);                                      // Teeb nupu
-        algusBtn.setOnClickListener(new View.OnClickListener() {                                    // Jälgib nupule vajutamist, kui vajutatakse liigub edasi
+        algusBtn.setOnClickListener(new View.OnClickListener() {                                    // Jälgib nupule vajutamist, kui
+                                                                                                    //  vajutatakse liigub kood edasi
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), InfoActivity.class);       // Teeb intenti, mis läheb järgmisele activity-le
-                startActivity(startIntent);                                                         // Käivitab intenti ja liigub järgmisele activity-le
+                Intent startIntent = new Intent(getApplicationContext(), InfoActivity.class);       // Teeb intenti ehk tegevuse, mis läheb
+                                                                                                    //  järgmisele activity-le ehk ekraanile
+                startActivity(startIntent);                                                         // Käivitab intenti ja liigub
+                                                                                                    //  järgmisele activity-le
             }
         });
     }
