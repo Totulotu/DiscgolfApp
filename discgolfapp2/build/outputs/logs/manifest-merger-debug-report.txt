@@ -1,0 +1,135 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b70d912170a8f53c3f5b699891357b43\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\432f0d80e5842664df2e7f023e275331\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\b2385bdf62ec3db394c11cc512152e90\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5514eff4de084946e009c9bee2739e27\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d3ab6743668e92cc5e9161f7ff7bd08c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f53e96dc0428b66bb960b4e84eb8d482\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\cff94be64721ae0ab34db38fbd09719b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\e6e53e6adf425693a5159b2b9d62b0ae\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2b3e1b5a17a124ac3d671138e229be07\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b76bc6a95a045d119f36335311602029\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9d19e0f2b85b750ee8d8f39da08ed72d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\f4845aae0e6e91f84e5298ad5e384838\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b3d7483bcd0a769ddb16fa37e031e62c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0c449f7594ad4c980a51902b6bc871fd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ce9fcddbc7b3d3213971946cb1aac72c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0bd8586c77dcae662852586d392e825\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\0b8478d97d393c828a54dd8c6f749105\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\78369e229faaaa9935a112f34a233fbb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bb9b808d5f6707df487762996be1f7cb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\3eecf8b13babef68008d5a4fe2a81dc6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\fdd132b0adbf964b34c678077ac14dcc\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7ebbc4cf4740823719fe7a7eae646281\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\84cb23213026bd240cd81926de0844de\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\9d67173bddc6afbe5c772aa9a9ee39c4\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f9227a99bcb8e10d8cf5db6c08355efa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\f75e415c264d6c199800c162892c43c9\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+	package
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:2:5-39
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:1-11:12
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:4:5-10:43
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ce9fcddbc7b3d3213971946cb1aac72c\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ce9fcddbc7b3d3213971946cb1aac72c\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0bd8586c77dcae662852586d392e825\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0bd8586c77dcae662852586d392e825\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ce9fcddbc7b3d3213971946cb1aac72c\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:7:9-41
+	android:roundIcon
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:8:9-54
+	android:icon
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:6:9-43
+	android:allowBackup
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:5:9-35
+	android:theme
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml:10:9-40
+uses-sdk
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b70d912170a8f53c3f5b699891357b43\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b70d912170a8f53c3f5b699891357b43\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\432f0d80e5842664df2e7f023e275331\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\432f0d80e5842664df2e7f023e275331\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\b2385bdf62ec3db394c11cc512152e90\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\b2385bdf62ec3db394c11cc512152e90\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5514eff4de084946e009c9bee2739e27\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\5514eff4de084946e009c9bee2739e27\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d3ab6743668e92cc5e9161f7ff7bd08c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\d3ab6743668e92cc5e9161f7ff7bd08c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f53e96dc0428b66bb960b4e84eb8d482\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\f53e96dc0428b66bb960b4e84eb8d482\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\cff94be64721ae0ab34db38fbd09719b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\cff94be64721ae0ab34db38fbd09719b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\e6e53e6adf425693a5159b2b9d62b0ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\e6e53e6adf425693a5159b2b9d62b0ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2b3e1b5a17a124ac3d671138e229be07\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\2b3e1b5a17a124ac3d671138e229be07\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b76bc6a95a045d119f36335311602029\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\b76bc6a95a045d119f36335311602029\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9d19e0f2b85b750ee8d8f39da08ed72d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\9d19e0f2b85b750ee8d8f39da08ed72d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\f4845aae0e6e91f84e5298ad5e384838\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\f4845aae0e6e91f84e5298ad5e384838\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b3d7483bcd0a769ddb16fa37e031e62c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\b3d7483bcd0a769ddb16fa37e031e62c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0c449f7594ad4c980a51902b6bc871fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\0c449f7594ad4c980a51902b6bc871fd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ce9fcddbc7b3d3213971946cb1aac72c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\ce9fcddbc7b3d3213971946cb1aac72c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0bd8586c77dcae662852586d392e825\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\a0bd8586c77dcae662852586d392e825\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\0b8478d97d393c828a54dd8c6f749105\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\0b8478d97d393c828a54dd8c6f749105\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\78369e229faaaa9935a112f34a233fbb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\78369e229faaaa9935a112f34a233fbb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bb9b808d5f6707df487762996be1f7cb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\bb9b808d5f6707df487762996be1f7cb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\3eecf8b13babef68008d5a4fe2a81dc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\3eecf8b13babef68008d5a4fe2a81dc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\fdd132b0adbf964b34c678077ac14dcc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\fdd132b0adbf964b34c678077ac14dcc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7ebbc4cf4740823719fe7a7eae646281\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7ebbc4cf4740823719fe7a7eae646281\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\84cb23213026bd240cd81926de0844de\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\84cb23213026bd240cd81926de0844de\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\9d67173bddc6afbe5c772aa9a9ee39c4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\9d67173bddc6afbe5c772aa9a9ee39c4\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f9227a99bcb8e10d8cf5db6c08355efa\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\f9227a99bcb8e10d8cf5db6c08355efa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\f75e415c264d6c199800c162892c43c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Robin Lek\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\f75e415c264d6c199800c162892c43c9\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Robin Lek\AndroidStudioProjects\DiscgolfApp\discgolfapp2\src\main\AndroidManifest.xml
