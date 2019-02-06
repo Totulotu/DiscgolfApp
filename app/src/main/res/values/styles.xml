@@ -12,7 +12,4 @@
         <item name="android:textColor">@color/valge</item>
     </style>
 
-    <style name="AppTheme.Lisamangija" >
-    </style>
-
 </resources>

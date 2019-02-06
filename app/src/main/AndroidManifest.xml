@@ -17,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".InfoActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".PunktideLugemisActivity"
@@ -24,6 +25,12 @@
         <activity android:name=".LisaMangija"
             android:theme="@style/AppTheme.Lisamangija"
             android:screenOrientation="portrait"></activity>
+=======
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".PunktideLugemisActivity" />
+        <activity android:name=".LisaMangija"
+            android:theme="@style/AppTheme.Lisamangija"></activity>
+>>>>>>> 2519eb6741869e2b54ac4c265bedb9dfc1a1299f
     </application>
 
 </manifest>

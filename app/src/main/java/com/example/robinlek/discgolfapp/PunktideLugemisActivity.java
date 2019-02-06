@@ -96,7 +96,7 @@ public class PunktideLugemisActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 final Dialog lisaMangijaDialog = new Dialog(PunktideLugemisActivity.this);  // Loob dialoogi lisaMangijaDialog
-                lisaMangijaDialog.setContentView(R.layout.activity_lisa_mangija);                   // Paneb dialoogi vaateks paigutuse activity_lisa_mangija
+                lisaMangijaDialog.setContentView(R.layout.activity_lisa_mangija);                   // Paneb lisaMangijaDialog-i vaateks paigutuse activity_lisa_mangija
                 lisaMangijaDialog.setCancelable(true);                                              // Laseb lisaMangijaDilog-i sellest mööda vajutades kinni panna
                 lisaMangijaDialog.show();                                                           // Näitab lisaMangijaDialog-i
 
@@ -213,7 +213,7 @@ public class PunktideLugemisActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 final Dialog alustaDialog = new Dialog(PunktideLugemisActivity.this);   // Loob dialoogi alustaDialog
-                alustaDialog.setContentView(R.layout.lopeta_lisamine);                          // Paneb dialoogi vaateks paigutuse lopeta_lisamine
+                alustaDialog.setContentView(R.layout.lopeta_lisamine);                          // Paneb alustaDialog-i vaateks paigutuse lopeta_lisamine
                 alustaDialog.setCancelable(true);                                               // Laseb alustaDialog-i sellest mööda vajutades kinni panna
                 alustaDialog.show();                                                            // Näitab alustaDialog-i
 
@@ -244,6 +244,7 @@ public class PunktideLugemisActivity extends AppCompatActivity {
 
                             punktiTR.addView(nimiTV);   // Lisa tabeliritta punktiTR vaate nimiTV
 
+                            // Inimeste punkti alade tekitamine
                             for(int p=0; p<radadeArv; p++) {                                                // Alustab kordust, mis käib kuni väide p<radadearv on tõene
                                 EditText punktidEDT = new EditText(PunktideLugemisActivity.this);   // Loob uue muudatava tekstivälja nimega punktidEDT
                                 punktidEDT.setWidth(150);                                                   // Muudab punktidEDT laiuse 150-ks
@@ -256,252 +257,271 @@ public class PunktideLugemisActivity extends AppCompatActivity {
                                 punktiTR.addView(punktidEDT);   // Lisab tabeliritta punktiTR vaate punktidEDT
                                 punktidAL.add(punktidEDT);      // Lisab listi punktidAL vaate punktidEDT
                             }
-                            TextView tulemusPunktidTV = new TextView(PunktideLugemisActivity.this);
-                            tulemusPunktidTV.setTextSize(20);
-                            tulemusPunktidTV.setGravity(1);
-                            tulemusPunktidTV.setHint("0");
-                            tulemusPunktidTV.setTextColor(Color.BLACK);
-                            punktiTR.addView(tulemusPunktidTV);
+                            TextView tulemusPunktidTV = new TextView(PunktideLugemisActivity.this); // Loob uue teksitvaate nimega tulemusPunktidTV
+                            tulemusPunktidTV.setTextSize(20);                                               // Muudab tulemusPunktidTV teksti suuruse 20-ks
+                            tulemusPunktidTV.setGravity(1);                                                 // Muudab tulemusPunktidTV gravitatsioon 1-ks ehk keskele
+                            tulemusPunktidTV.setHint("0");                                                  // Paneb tulemusPunktidTV vihjeks "0"
+                            tulemusPunktidTV.setTextColor(Color.BLACK);                                     // Muudab tulemusPunktidTV teksti värvi musdaks
 
-                            for(int p=0; p<radadeArv; p++) {
-                                TextView textViewPar = new TextView(PunktideLugemisActivity.this);
-                                textViewPar.setTextSize(12);
-                                textViewPar.setGravity(1);
-                                parMangijadTR.addView(textViewPar);
-                                parAL.add(textViewPar);
+                            punktiTR.addView(tulemusPunktidTV); // Lisab tabeliritta punktiTR vaate tulemusPunktidTV
+
+                            // Inimste vahele tekkiv par
+                            for(int p=0; p<radadeArv; p++) {                                            // Alustab kordust, mis käib kuni väide p<radadeArv on tõene
+                                TextView parTV = new TextView(PunktideLugemisActivity.this);    // Loob uue tekstivaate nimega parTV
+                                parTV.setTextSize(12);                                                  // Muudab parTV teksti suuruse 12-ks
+                                parTV.setGravity(1);                                                    // Muudab parTV gravitatsioon 1-ks ehk keskele
+
+                                parMangijadTR.addView(parTV);   // lisab tabeliritta parMangijadTR vaate parTV
+                                parAL.add(parTV);               // Lisab listi parAL vaate parTV
                             }
-                            TextView tulemusParTV = new TextView(PunktideLugemisActivity.this);
-                            tulemusParTV.setTextSize(12);
-                            tulemusParTV.setGravity(1);
-                            tulemusParTV.setTextColor(Color.BLACK);
-                            parMangijadTR.addView(tulemusParTV);
-                            tulemusedViskedAL.add(tulemusParTV);
+                            TextView tulemusParTV = new TextView(PunktideLugemisActivity.this); // Loob uue tekstivaate nimega tulemusParTV
+                            tulemusParTV.setTextSize(12);                                               // Muudab tulemusParTV teksti suuruse 12-ks
+                            tulemusParTV.setGravity(1);                                                 // Muudab tulemusParTV gravitatsiooni 1-ks ehk keskele
+                            tulemusParTV.setTextColor(Color.BLACK);                                     // Muudab tulemusParTV teksti värvi musdaks
+
+                            parMangijadTR.addView(tulemusParTV);    // Lisab tabeliritta parMangijadTR vaate tulemusParTV
+                            tulemusedViskedAL.add(tulemusParTV);    // Liasb listi tulemusedViskedAL vaate tulemusParTV
                         }
 
-                        lisaMangijaTR.removeView(lisaMangijaBtn);
-                        lisaMangijaTR.addView(arvutaBtn);
+                        lisaMangijaTR.removeView(lisaMangijaBtn);   // Eemaldab tabelireast lisaMangijaTR vaate lisaMangijaBtn
+                        lisaMangijaTR.addView(arvutaBtn);           // Lisab tabeliritta lisaMangijaTR vaate arvutaBtn
 
-                        tabelTL.removeView(lopetaVaheTR);
-                        tabelTL.removeView(alustaTR);
+                        tabelTL.removeView(lopetaVaheTR);   // Eemaldab tabelist tabelTL vaate lopetaVaheTR
+                        tabelTL.removeView(alustaTR);       // Eemaldab tabelist tabelTL vaate alustaTR
 
-                        alustaDialog.dismiss();
+                        alustaDialog.dismiss(); // Sulgeb alustaDialog-i
 
                     }
                 });
 
                 // Tagasi tabelisse
-                alustaTagasiBtn.setOnClickListener(new View.OnClickListener() {
+                alustaTagasiBtn.setOnClickListener(new View.OnClickListener() { // Aktiveerib järgneva koodi, kui vajudatakse nupule alustaTagasiBtn
                     @Override
                     public void onClick(View v) {
-                        alustaDialog.dismiss();
+                        alustaDialog.dismiss(); // Sulgeb alustaDialog-i
                     }
                 });
             }
         });
 
-        arvutaBtn.setOnClickListener(new View.OnClickListener() {
+        // Punktide arvutamine
+        arvutaBtn.setOnClickListener(new View.OnClickListener() {   // Aktiveerib järgneva koodi, kui vajudatakse nupule arvutaBtn
             @Override
             public void onClick(View v) {
 
-                final Dialog arvutaDialog = new Dialog(PunktideLugemisActivity.this);
-                arvutaDialog.setContentView(R.layout.tulemused_dialog);
-                arvutaDialog.setCancelable(true);
-                arvutaDialog.show();
+                final Dialog arvutaDialog = new Dialog(PunktideLugemisActivity.this);   // Loob dialoogi arvutaDialog
+                arvutaDialog.setContentView(R.layout.tulemused_dialog);                         // Paneb arvutaDialog-i vaateks paigutuse tulemused_dialog
+                arvutaDialog.setCancelable(true);                                               // Laseb arvutaDialog-i sellest mööda vajutades kinni panna
+                arvutaDialog.show();                                                            // Näitab arvutaDialog-i
 
-                Button tulemusJatkaBtn = arvutaDialog.findViewById(R.id.tulemusJatkaBtn);
-                Button tulemusTagasiBtn = arvutaDialog.findViewById(R.id.tulemusTagasiBtn);
+                Button tulemusJatkaBtn = arvutaDialog.findViewById(R.id.tulemusJatkaBtn);   // Akriveerib nupu tulemusJatkaBtn
+                Button tulemusTagasiBtn = arvutaDialog.findViewById(R.id.tulemusTagasiBtn); // Aktiveeriv nupu tulemusTagasiBtn
 
-                tulemusJatkaBtn.setOnClickListener(new View.OnClickListener() {
+                tulemusJatkaBtn.setOnClickListener(new View.OnClickListener() { // Aktiveerib järgneva koodi, kui vajudatakse nupule tulemusJatkaBtn
                     @Override
                     public void onClick(View v) {
 
-                        ArrayList<Integer> lopuPunktidAL = new ArrayList<>();
-                        ArrayList<Integer> alguseParAL = new ArrayList<>();
+                        ArrayList<Integer> lopuPunktidAL = new ArrayList<>();   // Loob listi lopuPunktidAL, kuhu saab lisada täisarve
+                        ArrayList<Integer> alguseParAL = new ArrayList<>();     // Loob listi aluseParAL, kuhu saab lisada täisarve
 
-                        for(int i=0; i<inimesteArv; i++) {
+                        for(int i=0; i<inimesteArv; i++) {  // Alustab kordust, mis käib kuni väide i<inimesteArv on tõene
 
-                            int tulemus = 0;
-                            int visked = 0;
-                            TextView tulemusedTV = new TextView(PunktideLugemisActivity.this);
+                            int tulemus = 0;    // Loob uue täisarvu tulemus ja paneb selle väärtuseks 0
+                            int visked = 0;     // Loob uues täisarvu visked ja paneb selle väärtuseks 0
 
-                            for(int r=0; r<radadeArv; r++) {
-                                TextView algneParTV = algneParAL.get(r);
-                                boolean onPar = algneParTV.getText().toString().trim().equalsIgnoreCase("");
+                            TextView tulemusedTV = new TextView(PunktideLugemisActivity.this);  // Loob uue tekstivaate nimega tulemusedTV
 
-                                if(onPar) {
-                                    algneParTV.setText("0");
+                            for(int r=0; r<radadeArv; r++) {    // Alustab kordust, mis käib kuni väide r<radadeArv on tõene
+
+                                TextView algneParTV = algneParAL.get(r);                                                     // Loob tekstivaate algneParTV ja paneb tekstiks sama teksti, mis on algneParAL listis r kohal
+                                boolean onPar = algneParTV.getText().toString().trim().equalsIgnoreCase("");    // Loob väite, mis on tõene, kui algneParTV on tühi
+
+                                if(onPar) {                     // Kui onPar väide on tõene liigub kood edasi
+                                    algneParTV.setText("0");    // Paneb algneParTV tekstiks 0
                                 }
 
-                                TextView mangijaPunktidTV = punktidAL.get(radadeArv * i + r);
-                                boolean onMangijaPunktid = mangijaPunktidTV.getText().toString().trim().equalsIgnoreCase("");
+                                TextView mangijaPunktidTV = punktidAL.get(radadeArv * i + r);                                                // Loob tekstivaate mangijaPunktidTV ja paneb tekstiks sama teksti, mis on punktidAL listis kohal (radadeArv * i + r)
+                                boolean onMangijaPunktid = mangijaPunktidTV.getText().toString().trim().equalsIgnoreCase("");   // Loob väite, mis on tõene, kui mangijaPunktidTV on tühi
 
-                                if(onMangijaPunktid) {
-                                    mangijaPunktidTV.setText("0");
+                                if(onMangijaPunktid) {              // Kui onMangijaPunktid väide on tõene liigub kood edasi
+                                    mangijaPunktidTV.setText("0");  // Paneb mangijaPunktidTV tekstiks 0
                                 }
 
-                                int algnePar = Integer.parseInt(algneParTV.getText().toString());
-                                int mangijaPunktid = Integer.parseInt(mangijaPunktidTV.getText().toString());
-                                visked += mangijaPunktid;
-                                lopuPunktidAL.add(mangijaPunktid);
-                                alguseParAL.add(algnePar);
+                                int algnePar = Integer.parseInt(algneParTV.getText().toString());               // Loob täisarvu algnePar ja paneb väärtuseks numbri, mis on algneParTV-s
+                                int mangijaPunktid = Integer.parseInt(mangijaPunktidTV.getText().toString());   // Loob täisarvu mangijaPunktid ja paneb vääruseks numbri, mis on mangijaPunktidTV-s
 
-                                if(algnePar == mangijaPunktid) {
-                                    TextView hintParTV = parAL.get(radadeArv * i + r);
-                                    hintParTV.setTextSize(12);
-                                    hintParTV.setGravity(1);
-                                    hintParTV.setHint("Par(0)");
-                                } else if((algnePar - 4) == mangijaPunktid) {
-                                    tulemus -= 4;
-                                    TextView condorTV = parAL.get(radadeArv * i + r);
-                                    condorTV.setTextSize(12);
-                                    condorTV.setGravity(1);
-                                    condorTV.setHint(" Condor(-4) ");
-                                } else if((algnePar - 3) == mangijaPunktid) {
-                                    tulemus -= 3;
-                                    TextView condorTV = parAL.get(radadeArv * i + r);
-                                    condorTV.setTextSize(12);
-                                    condorTV.setGravity(1);
-                                    condorTV.setHint(" Albatross(-3) ");
-                                } else if((algnePar - 2) == mangijaPunktid) {
-                                    tulemus -= 2;
-                                    TextView condorTV = parAL.get(radadeArv * i + r);
-                                    condorTV.setTextSize(12);
-                                    condorTV.setGravity(1);
-                                    condorTV.setHint(" Eagle(-2) ");
-                                } else if((algnePar - 1) == mangijaPunktid) {
-                                    tulemus -= 1;
-                                    TextView condorTV = parAL.get(radadeArv * i + r);
-                                    condorTV.setTextSize(12);
-                                    condorTV.setGravity(1);
-                                    condorTV.setHint(" Birdie(-1) ");
-                                } else if((algnePar + 1) == mangijaPunktid) {
-                                    tulemus += 1;
-                                    TextView condorTV = parAL.get(radadeArv * i + r);
-                                    condorTV.setTextSize(12);
-                                    condorTV.setGravity(1);
-                                    condorTV.setHint(" Bogey(+1) ");
-                                } else if((algnePar + 2) == mangijaPunktid) {
-                                    tulemus += 2;
-                                    TextView condorTV = parAL.get(radadeArv * i + r);
-                                    condorTV.setTextSize(12);
-                                    condorTV.setGravity(1);
-                                    condorTV.setHint(" Double Bogey(+2) ");
-                                } else if((algnePar + 3) == mangijaPunktid) {
-                                    tulemus += 3;
-                                    TextView condorTV = parAL.get(radadeArv * i + r);
-                                    condorTV.setTextSize(12);
-                                    condorTV.setGravity(1);
-                                    condorTV.setHint(" Triple Bogey(+3) ");
-                                } else if((algnePar + 4) == mangijaPunktid) {
-                                    tulemus += 4;
-                                    TextView condorTV = parAL.get(radadeArv * i + r);
-                                    condorTV.setTextSize(12);
-                                    condorTV.setGravity(1);
-                                    condorTV.setHint(" Quadtruple Bogey(+4) ");
-                                } else if((algnePar + 4) < mangijaPunktid) {
-                                    tulemus += mangijaPunktid - algnePar;
-                                    int suuremPar = mangijaPunktid - algnePar;
-                                    TextView suuremParTV = parAL.get(radadeArv * i + r);
-                                    suuremParTV.setTextSize(12);
-                                    suuremParTV.setGravity(1);
-                                    suuremParTV.setHint("+" + suuremPar);
-                                } else if((algnePar - 4) > mangijaPunktid) {
-                                    tulemus += algnePar - mangijaPunktid;
-                                    int vaiksemPar = algnePar - mangijaPunktid;
-                                    TextView suuremParTV = parAL.get(radadeArv * i + r);
-                                    suuremParTV.setTextSize(12);
-                                    suuremParTV.setGravity(1);
-                                    suuremParTV.setHint(" -" + vaiksemPar + " ");
+                                visked += mangijaPunktid;   // Liidab täisarvule visked mangijaPunktid
+
+                                lopuPunktidAL.add(mangijaPunktid);  // Lisab listi lopuPunktidAL täisarvu mangijaPunktid
+                                alguseParAL.add(algnePar);          // Lisab listi alguseParAL täisarvu algnePar
+
+                                if(algnePar == mangijaPunktid) {                        // Kui väide (algnePar = mangijaPunktid) on tõene liigub kood edasi
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint("Par(0)");                        // Paneb hintParTV tekstiks "Par(0)"
+
+                                } else if((algnePar - 4) == mangijaPunktid) {           // Kui väide ((algnePar - 4) = mangijaPunktid) on tõene liigub kood edasi
+                                    tulemus -= 4;                                       // Lahutab täisarvust tulemus -4
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint(" Condor(-4) ");                  // Paneb hintParTV tekstiks "Condor(-4)"
+
+                                } else if((algnePar - 3) == mangijaPunktid) {           // Kui väide ((algnePar - 3) = mangijaPunktid) on tõene liigub kood edasi
+                                    tulemus -= 3;                                       // Lahutab täisarvust tulemus -3
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint(" Albatross(-3) ");               // Paneb hintParTV tekstiks "Albatross(-3)"
+
+                                } else if((algnePar - 2) == mangijaPunktid) {           // Kui väide ((algnePar - 2) = mangijaPunktid) on tõene liigu kood edasi
+                                    tulemus -= 2;                                       // Lahutab täisarvust tulemus -2
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint(" Eagle(-2) ");                   // Paneb hintParTV tekstiks "Eagle(-2)"
+
+                                } else if((algnePar - 1) == mangijaPunktid) {           // Kui väide ((algnePar - 1) = mangijaPunktid) on tõene liigu kood edasi
+                                    tulemus -= 1;                                       // Lahutab täisarvust tulemus -1
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint(" Birdie(-1) ");                  // Paneb hintParTV tekstiks "Birdie(-1)"
+
+                                } else if((algnePar + 1) == mangijaPunktid) {           // Kui väide ((algnePar + 1) = mangijaPunktid) on tõene liigu kood edasi
+                                    tulemus += 1;                                       // Liidab täisarvule tulemus +1
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint(" Bogey(+1) ");                   // Paneb hintParTV tekstiks "Bogey(+1)"
+
+                                } else if((algnePar + 2) == mangijaPunktid) {           // Kui väide ((algnePar + 2) = mangijaPunktid) on tõene liigu kood edasi
+                                    tulemus += 2;                                       // Liidab täisarvule tulemus +2
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint(" Double Bogey(+2) ");            // Paneb hintParTV tekstiks "Double Bogey(+2)"
+
+                                } else if((algnePar + 3) == mangijaPunktid) {           // Kui väide ((algnePar + 3) = mangijaPunktid) on tõene liigu kood edasi
+                                    tulemus += 3;                                       // Liidab täisarvule tulemus +3
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint(" Triple Bogey(+3) ");            // Paneb hintParTV tekstiks "Triple Bogey(+3)"
+
+                                } else if((algnePar + 4) == mangijaPunktid) {           // Kui väide ((algnePar + 4) = mangijaPunktid) on tõene liigu kood edasi
+                                    tulemus += 4;                                       // Liidab täisarvule tulemus +4
+                                    TextView hintParTV = parAL.get(radadeArv * i + r);  // Loob uue tekstivaate hintParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    hintParTV.setTextSize(12);                          // Muudab hintParTV teksti suuruse 12-ks
+                                    hintParTV.setGravity(1);                            // Muudab hindParTV gravitatsiooni 1-ks ehk keskele
+                                    hintParTV.setHint(" Quadtruple Bogey(+4) ");        // Paneb hintParTV tekstiks "Quadtruple Bogey(+4)"
+
+                                } else if((algnePar + 4) < mangijaPunktid) {            // Kui väide ((algnePar + 4) < mangijaPunktid) on tõene liigu kood edasi
+                                    tulemus += mangijaPunktid - algnePar;               // Liidab täisarvule tulemus (manijaPunktid - algnePar)
+                                    int suuremPar = mangijaPunktid - algnePar;          // Loob uue täisarvu suuremPar ja paneb selle väärtuseks (mangijaPunktid - algnePar)
+                                    TextView suuremParTV = parAL.get(radadeArv * i + r);// Loob uue tekstivaate suuremParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    suuremParTV.setTextSize(12);                        // Muudab suuremParTV teksti suuruse 12-ks
+                                    suuremParTV.setGravity(1);                          // Muudab suuremParTV gravitatsiooni 1-ks ehk keskele
+                                    suuremParTV.setHint(" +" + suuremPar + " ");         // Paneb suuremParTV tekstiks (" +" + suuremPar + " ")
+
+                                } else if((algnePar - 4) > mangijaPunktid) {            // Kui väide ((algnePar - 4) > mangijaPunktid) on tõene liigu kood edasi
+                                    tulemus += algnePar - mangijaPunktid;               // Liidab täisarvule tulemus (algnePar - mangijaPunktid)
+                                    int vaiksemPar = algnePar - mangijaPunktid;         // Loob uue täisarvu vaiksemPar ja paneb selle väärtuseks (algnePar - mangijaPunktid)
+                                    TextView vaiksemParTV = parAL.get(radadeArv * i + r);// Loob uue tekstivaate vaiksemParTV ja paneb tekstiks sama teksti, mis on parAL listis kohal (radadeARv * i + r)
+                                    vaiksemParTV.setTextSize(12);                       // Muudab vaiksemParTV teksti suuruse 12-ks
+                                    vaiksemParTV.setGravity(1);                         // Muudab vaiksemParTV gravitatsiooni 1-ks ehk keskele
+                                    vaiksemParTV.setHint(" -" + vaiksemPar + " ");      // Paneb vaiksemParTV tekstiks (" -" + vaiksemPar + " ")
                                 }
 
-                                if(r == radadeArv - 1){
-                                    TextView viskeTulemusTV = tulemusedViskedAL.get(i);
-                                    String loppTulemus = String.valueOf(tulemus);
-                                    String viskeTulemus = "Viskeid: " + String.valueOf(visked);
-                                    tulemusedTV.setText(loppTulemus);
-                                    viskeTulemusTV.setText(viskeTulemus);
+                                if(r == radadeArv - 1){                                         // Kui väide (r = radaderArv - 1) on tõene liigub kood edasi
+                                    TextView viskeTulemusTV = tulemusedViskedAL.get(i);         // Loob uue tekstivaate viskeTulemusTV ja paneb tekstiks sama teksi, mis on tulemusedViskedAL listis kohal i
+                                    String loppTulemus = String.valueOf(tulemus);               // Loob teksti nimega loppTulemus ja paneb tekstiks täisarvu tulemus väärtuse
+                                    String viskeTulemus = "Viskeid: " + String.valueOf(visked); // Loob teksti nimega viskeTulemus ja paneb tekstiks "Viskeid: " + täisarvu visked väärtuse
+                                    tulemusedTV.setText(loppTulemus);                           // Paneb tulemusedTV tekstiks teksti loppTulemus
+                                    viskeTulemusTV.setText(viskeTulemus);                       // Paneb viskeTulemusTV tekstiks teksti viskeTulemus
                                 }
                             }
 
-                            TableRow mangijad = mangijadAL.get(i);
-                            TextView algneNimiTV = nimedAL.get(i);
-                            mangijad.removeAllViews();
+                            TableRow mangijadTR = mangijadAL.get(i);    // Loob uue tabelirea nimega mangijadTR ja paneb selleks reaks mangijadAL listis kohal i oleva rea
+                            TextView algneNimiTV = nimedAL.get(i);      // Loob uue tekstivaate nimega algneNimiTV ja paneb selle tekstiks listis nimedAL i kohal oleva teksti
+                            mangijadTR.removeAllViews();                // Eemaldab tabelireast mangijadTR kõik vaated
 
-                            String nimi = algneNimiTV.getText().toString();
-                            TextView nimiTV = new TextView(PunktideLugemisActivity.this);
-                            nimiTV.setTextSize(22);
-                            nimiTV.setTextColor(Color.BLACK);
-                            nimiTV.setText(nimi);
+                            String nimi = algneNimiTV.getText().toString();                         // Loob uue teksti nimega nimi ja paneb selle tekstiks sama teksti, mis on tekstivaates algneNimiTV
+                            TextView nimiTV = new TextView(PunktideLugemisActivity.this);   // Loob uue tekstivaate nimega nimiTV
+                            nimiTV.setTextSize(22);                                                 // Muudab nimiTV teksti suuruse 22-ks
+                            nimiTV.setTextColor(Color.BLACK);                                       // Muudab nimiTV teksti värvi musdaks
+                            nimiTV.setText(nimi);                                                   // Paneb nimiTV tekstiks teksti nimi
 
-                            mangijad.addView(nimiTV);
+                            mangijadTR.addView(nimiTV); // Lisab tabeliritta mangijadTR vaate nimiTV
 
-                            for(int j=0; j<radadeArv; j++) {
-                                int punktid = lopuPunktidAL.get(j);
-                                String lopuPunktid = Integer.toString(punktid);
+                            for(int j=0; j<radadeArv; j++) {                    // Alustab kordust, mis käib kuni väide j<radadeArv on tõene
+                                int punktid = lopuPunktidAL.get(j);             // Loob uue täisarvu nimega punktid ja paneb selle väärtuseks lopuPunktidAL listist täisarvu, mis on kohal j
+                                String lopuPunktid = Integer.toString(punktid); // Loob uue teksti nimega lopuPunktid ja paneb tekstiks täisarvu punktid
 
-                                TextView punktidTV = new TextView(PunktideLugemisActivity.this);
-                                punktidTV.setWidth(150);
-                                punktidTV.setTextSize(20);
-                                punktidTV.setGravity(1);
-                                punktidTV.setText(lopuPunktid);
-                                punktidTV.setTextColor(Color.BLACK);
+                                TextView punktidTV = new TextView(PunktideLugemisActivity.this);    // Loob uue tekstivaate nimega punktidTV
+                                punktidTV.setWidth(150);                                                    // Muudab punktidTV laiuse 150-ks
+                                punktidTV.setTextSize(20);                                                  // Muudab punktidTV teksti suuruse 20-ks
+                                punktidTV.setGravity(1);                                                    // Muudab punktidTV gravitatsiooni 1-ks ehk keskele
+                                punktidTV.setText(lopuPunktid);                                             // Paneb punktidTV tekstiks teksti lopuPunktid
+                                punktidTV.setTextColor(Color.BLACK);                                        // Muudab punktidTV teksti värvi musdaks
 
-                                mangijad.addView(punktidTV);
+                                mangijadTR.addView(punktidTV);  // Lisab tabeliritta mangijadTR vaate punktidTV
                             }
 
-                            tulemusedTV.setTextSize(20);
-                            tulemusedTV.setGravity(1);
-                            tulemusedTV.setTextColor(Color.BLACK);
-                            mangijad.addView(tulemusedTV);
+                            tulemusedTV.setTextSize(20);            // Muudab tulemusedTV teksti suuruse 20-ks
+                            tulemusedTV.setGravity(1);              // Muudab tulemusedTV gravitatsiooni 1-ks ehk keskele
+                            tulemusedTV.setTextColor(Color.BLACK);  // Muudab tulemusedTV teksti värvi musdaks
+                            mangijadTR.addView(tulemusedTV);        // Lisab tabeliritta mangijadTR vaate tulemusedTV
 
-                            lopuPunktidAL.clear();
+                            lopuPunktidAL.clear();  // Teeb listi lopuPunktidAL tühjaks
                         }
 
-                        TextView parTV = findViewById(R.id.parTV);
-                        parTR.removeAllViews();
-                        parTR.addView(parTV);
+                        TextView parTV = findViewById(R.id.parTV);  // Aktiveerib tekstivaate parTV
+                        parTR.removeAllViews();                     // Kustutab tabelireast parTR kõik vaated
+                        parTR.addView(parTV);                       // Lisab tabeliritta parTR vaate parTV
 
-                        for(int p=0; p<radadeArv; p++) {
-                            int algusPar = alguseParAL.get(p);
-                            String parString = Integer.toString(algusPar);
-                            TextView algusParTV = new TextView(PunktideLugemisActivity.this);
-                            algusParTV.setWidth(150);
-                            algusParTV.setTextSize(14);
-                            algusParTV.setGravity(1);
-                            algusParTV.setText(parString);
-                            algusParTV.setTextColor(Color.BLACK);
+                        for(int p=0; p<radadeArv; p++) {                                                // Alustab kordust, mis käib kuni väide p<radadeArv on tõene
+                            int algusPar = alguseParAL.get(p);                                          // Loob uue täisarvu nimega alusPar, mille väärtus tuleb täisarvust listis alguseParAL, mis on kohal p
+                            String parString = Integer.toString(algusPar);                              // Loob uue teksti nimega parString ja paneb tekstiks täisarvu algusPar
+                            TextView algusParTV = new TextView(PunktideLugemisActivity.this);   // Loob uue tekstivaate nimega algusParTV
+                            algusParTV.setWidth(150);                                                   // Muudab algusParTV laiuse 150-ks
+                            algusParTV.setTextSize(14);                                                 // Muudab algusParTV teksti suuruse 14-ks
+                            algusParTV.setGravity(1);                                                   // Muudab algusParTV gravitatsiooni 1-ks ehk keskele
+                            algusParTV.setText(parString);                                              // Paneb algusParTV tekstiks teksti parString
+                            algusParTV.setTextColor(Color.BLACK);                                       // Muudab algusParTV teksti värvi musdaks
 
-                            parTR.addView(algusParTV);
+                            parTR.addView(algusParTV);  // Lisab tabeliritta parTR vaate algusParTV
                         }
 
-                        lisaMangijaTR.removeView(arvutaBtn);
-                        lisaMangijaTR.addView(uusMangBtn);
-                        arvutaDialog.dismiss();
+                        lisaMangijaTR.removeView(arvutaBtn);    // Eemaldab tabelireast lisaMangijaTR vaate arvutaBtn
+                        lisaMangijaTR.addView(uusMangBtn);      // Lisab tabeliritta lisaManijaTR vaate uusMangBtn
+                        arvutaDialog.dismiss();                 // Sulge arvutaDialog-i
                     }
                 });
 
-                tulemusTagasiBtn.setOnClickListener(new View.OnClickListener() {
+                tulemusTagasiBtn.setOnClickListener(new View.OnClickListener() {    // Aktiveerib järgneva koodi, kui vajudatakse nupule tulemusTagasiBtn
                     @Override
                     public void onClick(View v) {
-                        arvutaDialog.dismiss();
+                        arvutaDialog.dismiss(); // Sulgeb arvutaDialog-i
                     }
                 });
             }
         });
 
-        uusMangBtn.setOnClickListener(new View.OnClickListener() {
+        uusMangBtn.setOnClickListener(new View.OnClickListener() {  // Aktiveerib järgneva koodi, kui vajudatakse nupule uusMangBtn
             @Override
             public void onClick(View v) {
 
-                final Dialog uusMangDialog = new Dialog(PunktideLugemisActivity.this);
-                uusMangDialog.setContentView(R.layout.uus_mang_dialog);
-                uusMangDialog.setCancelable(true);
-                uusMangDialog.show();
+                final Dialog uusMangDialog = new Dialog(PunktideLugemisActivity.this);  // Loob uue dialoogi nimega uusMangDialog
+                uusMangDialog.setContentView(R.layout.uus_mang_dialog);                         // Paneb  uusMangDialog-i vaateks paigutuse uus_mang_dialog
+                uusMangDialog.setCancelable(true);                                              // Laseb uusMangDialog-i sellest mööda vajutades kinni panna
+                uusMangDialog.show();                                                           // Näitab uusMangDialog-i
 
-                Button uusMangBtn = uusMangDialog.findViewById(R.id.uusMangBtn);
-                Button uusTagasiBtn = uusMangDialog.findViewById(R.id.uusTagasiBtn);
+                Button uusMangBtn = uusMangDialog.findViewById(R.id.uusMangBtn);        // Aktiveerib nupu uusMangBtn
+                Button uusTagasiBtn = uusMangDialog.findViewById(R.id.uusTagasiBtn);    // Aktiveerib nupu uusTagasiBtn
 
-                uusMangBtn.setOnClickListener(new View.OnClickListener() {
+                uusMangBtn.setOnClickListener(new View.OnClickListener() {  // Aktiveerib järgneva koodi, kui vajudatakse nupule uusMangBtn
                     @Override
                     public void onClick(View v) {
 
@@ -589,15 +609,15 @@ public class PunktideLugemisActivity extends AppCompatActivity {
 //                        tabelTL.addView(lopetaVaheTR);
 //                        tabelTL.addView(alustaTR);
 
-                        finish();
-                        startActivity(radadeArvIntent);
+                        finish();                       // Lõpetab kõik protsessid
+                        startActivity(radadeArvIntent); // Aktiveerib tegevuse radadeArvIntent
                     }
                 });
 
-                uusTagasiBtn.setOnClickListener(new View.OnClickListener() {
+                uusTagasiBtn.setOnClickListener(new View.OnClickListener() {    // Aktiveerib järgneva koodi, kui vajudatakse nupule uusTagasiBtn
                     @Override
                     public void onClick(View v) {
-                        uusMangDialog.dismiss();
+                        uusMangDialog.dismiss();    // Sulgeb uusMangDialog-i
                     }
                 });
             }
